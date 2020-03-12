@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.4.js"></script>
+
+    <script>
+        $(function () {
+
+            //使用代理
+            /*$('ul').delegate(子控件,代理的事件,触发的函数)*/
+            $('ul').delegate('li', 'click', function () {
+                //把对应的内容打印
+                console.log($(this).html());
+            });
+
+            //增加一个新的控件
+            $('ul').append(" <li>内容5</li>");
+            $('ul').append(" <li>内容6</li>");
+
+        });
+    </script>
+</head>
+<body>
+
+<!--ul>li*3-->
+<ul>
+    <li>内容1</li>
+    <li>内容2</li>
+    <li>内容3</li>
+    <li>内容4</li>
+</ul>
+
+</body>
+</html>

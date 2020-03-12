@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var list = [1,2,3,4,'5']
+
+        list.push('6')
+        console.log(list);
+
+        list.pop()
+        console.log(list);
+
+        // splice(删除的位置,删除的个数,添加的数据)
+        // 删除
+        list.splice(1,1)
+        console.log(list);
+
+        // 添加
+        list.splice(0,0,'abc')
+        console.log(list);
+
+        // 替换
+        list.splice(0,1,'12','ac')
+        console.log(list);
+
+        var list = [[1,2,3],[4,5,6]]
+        console.log(list[0][1]);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

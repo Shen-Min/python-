@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.4.js"></script>
+    <script>
+          /*
+         1. url 请求地址
+         2. data 设置发送给服务器的数据, 没有参数不需要设置
+         3. success 设置请求成功后的回调函数
+         4. dataType 设置返回的数据格式，常用的是'json'格式, 默认智能判断数据格式
+        */
+        $.get("http://127.0.0.1:8080/check_user.html",function (data, status) {
+            console.log(data);
+            console.log(status);
+        },"JSON").error(function (data, status) {
+            console.log(data);
+            console.log(status);
+        })
+    </script>
+</head>
+<body>
+
+</body>
+</html>

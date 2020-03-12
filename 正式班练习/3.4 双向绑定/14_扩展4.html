@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+    <script>
+        window.onload = function () {
+            //初始化vue
+            new Vue({
+                el: '.input01',
+                methods: {
+                    //按下回车的时候触发的
+                    submit: function () {
+                        alert("按下回车了!")
+
+                    }
+                }
+
+            });
+        };
+    </script>
+</head>
+<body>
+
+<!--键盘的事件,来监听我们的回车键-->
+<input type="text" class="input01" v-on:keyup.enter="submit">
+</body>
+</html>

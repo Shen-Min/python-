@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.4.js"></script>
+
+    <script>
+        $(function () {
+            //使用定时器
+            //初始化值
+            var count = 59;
+            //1.函数
+            function run() {
+                //如果这个count到0了,那么停止
+                if (count == 0) {
+                    clearInterval(interval_run);
+                }
+
+                //html
+                //自减
+                $('#div01').html(count--)
+            }
+
+            //2.定时器
+            var interval_run = setInterval(run, 100);
+
+            //点击按钮停止
+            $("#btn01").click(function () {
+                //清除 定时器
+                clearInterval(interval_run)
+            });
+
+        });
+
+    </script>
+</head>
+<body>
+
+<div id="div01">60</div>
+<input type="button" id="btn01" value="stop">
+
+</body>
+</html>

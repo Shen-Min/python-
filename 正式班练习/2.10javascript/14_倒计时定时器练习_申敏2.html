@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+            var count = 59;
+            function clock() {
+                if (count == 0) {
+                    clearInterval(interval_clock);
+                }
+                $('#time0').html(count--);
+            }
+
+            var interval_clock = setInterval(clock,1000);
+
+            $('#bt1').click(function () {
+                clearInterval(interval_clock);
+            });
+        });
+
+    </script>
+</head>
+<body>
+<div id="time0">60</div>
+<input type="button" value="闹钟" id="bt1">
+</body>
+</html>

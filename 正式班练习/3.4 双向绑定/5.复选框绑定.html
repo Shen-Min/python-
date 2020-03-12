@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+    <script>
+        window.onload=function () {
+            new Vue({
+                el:"#app",
+                data:{
+                    likes:[]
+
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+<div id="app">
+
+    <input type="checkbox" name="like" value="吃饭" v-model="likes">吃饭
+    <input type="checkbox" name="like" value="睡觉" v-model="likes">睡觉
+    <input type="checkbox" name="like" value="打豆豆" v-model="likes">打豆豆
+    <p>{{likes}}</p>
+</div>
+</body>
+</html>

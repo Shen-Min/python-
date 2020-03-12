@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src = "./vue.js"></script>
+    <script>
+        window.onload = function () {
+            new Vue({
+                el:".a1",
+                data:{
+                    url:"http://www.itcast.cn",
+                    content:"itcast"
+                }
+            });
+        };
+    </script>
+
+
+</head>
+<body>
+<a :href="url" class="a1">{{content}}</a>
+
+</body>
+</html>

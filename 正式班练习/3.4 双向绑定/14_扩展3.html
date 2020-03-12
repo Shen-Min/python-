@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+    <script>
+        window.onload = function () {
+            //初始化vue
+            new Vue({
+                el: '#input01',
+                methods: {
+                    //会传到funcatin参数中
+                    show: function (a) {
+                        alert("弹出来了!" + a)
+                    }
+                }
+
+            });
+        };
+    </script>
+</head>
+<body>
+<!--这个按钮只能点击一次,once这个修改的点击事件只能点击一次-->
+<input type="button" value="点击" id="input01" v-on:click.once="show('age')">
+</body>
+</html>

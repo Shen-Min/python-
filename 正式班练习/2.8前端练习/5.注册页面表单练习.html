@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="http://127.0.0.1:8080/regedit.html" method="post">
+    <p>
+        <lable>姓名:</lable>
+        <input type="text" name="username">
+    </p>
+    <p>
+        <lable>密码:</lable>
+        <input type="password" name="pwd">
+    </p>
+    <p>
+        <lable>性别:</lable>
+        <input type="radio" name="sex" value="0">男
+        <input type="radio" name="sex" value="1">女
+    </p>
+    <p>
+        <lable>爱好:</lable>
+        <input type="checkbox" name="like" value="song">唱歌
+        <input type="checkbox" name="like" value="dance">跳舞
+        <input type="checkbox" name="like" value="run">跑步
+    </p>
+    <p>
+        <lable>照片:</lable>
+        <input type="file" name="file_photo">
+    </p>
+    <p>
+        <lable>个人描述:</lable>
+        <textarea name="desc"></textarea>
+    </p>
+    <p>
+        <lable>城市:</lable>
+        <select name="city">
+            <option value="city">上海</option>
+            <option value="city">北京</option>
+            <option value="city">深圳</option>
+        </select>
+    </p>
+    <p>
+        <input type="submit">
+        <input type="reset">
+    </p>
+</form>
+
+</body>
+</html>

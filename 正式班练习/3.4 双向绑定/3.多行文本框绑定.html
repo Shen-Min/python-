@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+    <script>
+        window.onload=function () {
+            new Vue({
+                el:".div1",
+                data:{
+                    content:""
+                }
+            })
+        }
+    </script>
+</head>
+<body>
+<div class="div1">
+    <div>{{content}}</div>
+    <textarea v-model="content"></textarea>
+</div>
+
+</body>
+</html>

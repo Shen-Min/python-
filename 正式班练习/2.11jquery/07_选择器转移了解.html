@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+            /*选择div中id为'hm'的上面的一个元素*/
+            /*$('#hm').prev().css({
+             'color': 'red'
+             });*/
+
+            /*选择div中id为'hm'的上面所有的元素*/
+            /*  $("#hm").prevAll().css({
+             'color': 'red'
+             })*/
+
+
+            /*选择div中id为'hm'的下面的一个元素*/
+            /* $("#hm").next().css({
+             'color': 'red'
+             });*/
+            /*选择div中id为'hm'的下面的所有元素*/
+            /*$("#hm").nextAll().css({
+             'color': 'red'
+             });*/
+
+            /*选择div中id为'hm'的父元素*/
+            /*$("#hm").parent().css({
+             'color': 'red'
+             });*/
+
+            /*选择div中id为'hm'的兄弟元素*/
+            /* $("#hm").siblings().css({
+             'color': 'red'
+             });*/
+
+            /*选择div中id为'hm'的子元素*/
+           /* $("#hm").children().css({
+                'color': 'green'
+            });*/
+
+            /*选择div中id为'hm'的子元素中找到类名为.div02的子元素*/
+
+            /*$("#hm").find('.div02').css({
+                color: 'red'
+            });*/
+
+            $(".div02").css({
+                  color: 'green'
+            })
+        });
+    </script>
+</head>
+<body>
+<div>
+    <div class="bd">百度</div>
+    <div>google</div>
+    <div id="hm">黑马
+        <div>孩子1</div>
+        <div class="div02">孩子2</div>
+    </div>
+    <div>传智</div>
+    <div>python</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+    <script>
+        window.onload = function () {
+            //初始化vue
+            new Vue({
+                el:".a1",
+                data:{
+                    //数据设置
+                    name:"黑马",
+                    url:"http://www.itcast.cn",
+                    key:'href'
+                }
+
+            });
+        };
+    </script>
+</head>
+<body>
+
+<!--我们属性的键也可以动态的,使用[键名]-->
+<a :[key]="url" class="a1">{{name}}</a>
+</body>
+</html>

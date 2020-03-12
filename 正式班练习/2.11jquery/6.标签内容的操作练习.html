@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.4.js"></script>
+    <script>
+        // 1获取标签内容 2替换  3追加
+        $(function () {
+            console.log($('#div1').html());
+
+            $('#div1').html('hello 替换成了您好!');
+
+            $('#div1').append('world!');
+        })
+
+    </script>
+</head>
+<body>
+<div id="div1">
+    <p>hello</p>
+</div>
+</body>
+</html>

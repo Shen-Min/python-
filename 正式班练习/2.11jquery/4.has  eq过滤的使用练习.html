@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.4.js"></script>
+    <script>
+
+        $(function () {
+            /*方法1:根据id选择器设置
+            $('#h1_id').css({
+                color:'red'
+            })
+            方法2:has使用*/
+            $('div').has('#h1_id').css({
+                color:'green'
+            })
+
+            // 方法3:eq的使用 eq(索引)
+            $('div').eq(0).css({
+                background:'red'
+            })
+        })
+    </script>
+</head>
+<body>
+<div>
+    <!-- 这是第一个div -->
+    <!-- 通过选择器has更改h1的样式 -->
+    <h1 id='h1_id'>一级标题</h1>
+</div>
+
+<div>
+    <!-- 这是第二个div -->
+    <h1>一级标题1</h1>
+</div>
+</body>
+</html>

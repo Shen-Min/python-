@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+<!--        js创建对象:方法1-->
+        var stu = new Object();
+    //    初始化属性
+        stu.name = "huahua";
+        stu.age = 10;
+
+    //    初始化方法
+        stu.get_age = function () {
+            console.log(this.age);
+        }
+
+    //    调用方法
+        stu.get_age()
+
+    </script>
+    <script>
+<!--        js创建对象:方法2-->
+        //创建对象并初始化属性与方法
+        var stu = {
+            name:'小东',
+            age:10,
+
+            get_name :function () {
+                console.log(this.name);
+            }
+        }
+  //    调用方法
+        stu.get_name()
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

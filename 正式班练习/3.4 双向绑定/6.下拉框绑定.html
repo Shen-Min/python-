@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+    <script>
+        window.onload=function () {
+            new Vue({
+                el:"#add",
+                data:{
+                    address:""
+                }
+            })
+        }
+    </script>
+</head>
+<body>
+<div id="add">
+    <select name="city" id="address" v-model="address">
+        <option value="上海">上海</option>
+        <option value="北京">北京</option>
+        <option value="深圳">深圳</option>
+    </select>
+    <p>{{address}}</p>
+</div>
+</body>
+</html>

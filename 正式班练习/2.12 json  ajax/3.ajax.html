@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+            $.ajax({
+                url: "http://127.0.0.1:8080/cheak_user.html",
+                type: "post",
+                data: {"name": "xiaoyao"},
+                dataType: "JSON",
+                success: function (data, status) {
+                    console.log(data);
+                    console.log(status);
+                    console.log("成功");
+                },
+                error: function (data, status) {
+                    console.log(data);
+                    console.log(status);
+                    console.log("失败");
+                },
+                async: True
+            });
+        });
+
+    </script>
+
+
+</head>
+<body>
+
+</body>
+</html>

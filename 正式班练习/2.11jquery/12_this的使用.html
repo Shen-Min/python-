@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.4.js"></script>
+
+    <script>
+        $(function () {
+            //设置点击事件
+            $('#div01').click(function () {
+                //js原先的写法
+                /*var div01 = document.getElementById("div01");
+                 console.log(div01.innerHTML);*/
+                /*this代码当前被触发的控件*/
+                /*console.log(this.innerHTML);*/
+
+                //jquery方式
+                /*console.log($("#div01").html());*/
+
+                /*$(this)把原生的js对象转成了jquery对象*/
+                console.log($(this).html());
+
+
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+<!--div设置一个点击事件-->
+
+<div id="div01">这个是一个内容</div>
+
+</body>
+</html>

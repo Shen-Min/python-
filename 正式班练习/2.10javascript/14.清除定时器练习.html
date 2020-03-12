@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function () {
+
+            function clock() {
+                console.log(clock);
+            }
+
+            //函数类设置定时器,并赋值给变量a
+            a = setInterval(clock,1000);
+
+            //设置点击停止功能:1.得到控件.2.设置事件
+            var c = document.getElementById('bt1');
+            c.onclick = function () {
+                clearInterval(a)
+            }
+
+        }
+
+
+    </script>
+</head>
+<body>
+<input type="button" value="闹钟" id="bt1">
+</body>
+</html>

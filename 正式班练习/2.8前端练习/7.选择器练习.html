@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    标签选择器-->
+    <style >
+        p{
+            color:red;
+        }
+
+    </style>
+<!--    类选择器-->
+    <style>
+        .green{
+            background: #66a8cc;
+        }
+
+        .p1{
+            color: yellow;
+        }
+
+        .p2{
+            color:darkorange;
+        }
+    </style>
+<!--层级选择器-->
+    <style>
+        div p{
+            color:indigo;
+        }
+        .perple .pink{
+            color:deepskyblue;
+        }
+    </style>
+
+</head>
+<body>
+<p>内容</p>
+
+<div class="green">内容</div>
+<p class="p1 p2">段落</p>
+
+<div>
+    <p>hello</p>
+</div>
+
+<div class="perple">123
+    <p class="pink">456</p>
+</div>
+
+
+</body>
+</html>

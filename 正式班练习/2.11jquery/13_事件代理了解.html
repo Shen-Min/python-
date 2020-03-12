@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.4.js"></script>
+
+    <script>
+        $(function () {
+            //设置点击事件
+            $("#div1").click(function () {
+                console.log("div1");
+            });
+
+            $("#div2").click(function () {
+                console.log('div2');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="div1" style="width:200px; height:200px; background: red;">
+        <div id="div2" style="width:100px; height:100px;background: yellow;">
+            哈哈
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.4.js"></script>
+
+    <script>
+      /*网页加载完以后调用的事件*/
+      /*$(function () {
+
+      });*/
+      //这个效果跟window.onload跟$(函数)效果是一样
+      $(document).ready(function () {
+          $("#text1").focus(function () {
+              console.log("获取焦点");
+          });
+      });
+    </script>
+</head>
+<body>
+<!--输入框-->
+<input type="text" id="text1">
+<!--按钮-->
+<input type="button" id="button1" value="点击">
+
+<!--超链接-->
+<a href="http://www.itcast.cn" id="a1">itcast</a>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src = "./vue.js"></script>
+    <script>
+        window.onload = function () {
+            new Vue({
+                el:".div",
+                data:{
+                    sex:1
+                    }
+                })
+        };
+    </script>
+
+
+</head>
+<body>
+<div class="div">
+    <p v-show = "sex === 1">男</p>
+    <p v-show = "sex === 2">女</p>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+             $('li').css({
+            color:'red'
+        });
+
+            $('.p1').css({
+                color:'green'
+            });
+
+            $('#p2').click(function () {
+                alert('点击时弹窗')
+            });
+
+            $('div h1').css({
+                color:'pink'
+            })
+
+            $('input[type="password"]').css({
+                background:'black'
+            })
+        })
+
+    </script>
+</head>
+<body>
+<!--使用标签选择器,设置字体颜色-->
+<ul>
+    <li>itcast</li>
+    <li>黑马</li>
+    <li>百度</li>
+</ul>
+
+<!--使用类选择器,设置字体颜色-->
+<p class="p1">
+    内容1
+</p>
+
+<!--使用id选择器,设置点击事件-->
+<p id="p2">
+    内容2
+</p>
+
+<!--使用层级选择器,设置字体颜色-->
+<div>
+    <h1>一级标题</h1>
+    <input type="password" name="content">
+
+</div>
+
+<!--使用属性选择器,设置背景了解-->
+<input type="text" name="content">
+<input type="password" name="pwd">
+</body>
+</html>

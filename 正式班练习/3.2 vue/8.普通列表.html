@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+    <script>
+        window.onload = function () {
+            new Vue({
+                el:"#ul1",
+                data:{
+                    list:["小花","中花","大花"]
+
+                }
+            })
+        }
+    </script>
+</head>
+<body>
+<ul id="ul1">
+    <li v-for="temp in list">{{temp}}</li>
+</ul>
+</body>
+</html>

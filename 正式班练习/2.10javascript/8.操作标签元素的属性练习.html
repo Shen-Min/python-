@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function () {
+            // 页面加载完了后获取标签控件
+            var a = document.getElementById('input1');
+            console.log(a);
+// 根据控件读取属性
+            console.log(a.type);
+            console.log(a.className);
+            console.log(a.style.fontSize);
+            console.log(a.id);
+// 修改属性
+            a.type = 'password';
+            a.style.fontSize = '33px';
+
+            // innerHTML读取或设置标签包裹的内容
+            var b = document.getElementById('div1');
+            console.log(b);
+            console.log(b.innerHTML);
+            b.innerHTML='<a href="http://www.baidu.com">百度</a>'
+
+        }
+
+
+
+    </script>
+
+</head>
+<body>
+
+<input type="text" class="class2" id="input1" style="font-size: 22px;color: red;">输入框</input>
+<div id="div1">内容</div>
+</body>
+</html>

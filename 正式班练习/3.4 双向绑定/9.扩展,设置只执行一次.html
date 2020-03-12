@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+    <script>
+        window.onload=function () {
+            new Vue({
+                el:"#clock1",
+                methods:{
+                    call:function () {
+                        alert("按下回车了")
+                    }
+                }
+            })
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="闹钟" id="clock1" @click.keyup.enter="call()">
+</body>
+</html>

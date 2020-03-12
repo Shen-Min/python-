@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src = "./vue.js"></script>
+    <script>
+        window.onload = function () {
+            new Vue({
+                el:".div",
+                data:{
+                    type:'f'
+                    }
+                })
+        };
+    </script>
+
+
+</head>
+<body>
+<div class="div">
+    <p v-if = "type === 'a'">A级</p>
+    <p v-else-if = "type === 'b'">B级</p>
+    <p v-else-if = "type === 'c'">C级</p>
+    <p v-else >D级</p>
+</div>
+
+</body>
+</html>

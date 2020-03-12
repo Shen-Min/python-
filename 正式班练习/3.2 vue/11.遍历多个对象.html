@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+    <script>
+        window.onload = function () {
+            new Vue({
+                el:"#ul1",
+                data:{
+                    obj_list:[
+                       {name:"zs",age:10},
+                       {name:"lisi",age:18},
+                       {name:"wangwu",age:20}
+                   ]
+                }
+
+            })
+        }
+    </script>
+</head>
+<body>
+<ul id="ul1">
+    <li v-for ="item in obj_list">{{item}}</li>
+    <li v-for ="item in obj_list">{{item.name}}--{{item.age}}</li>
+
+</ul>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+            $('#user').blur(function () {
+                console.log('失去焦点去校验');
+
+                $.ajax({
+                    url: "http://127.0.0.1:8080/cheak_user.html",
+                    type: "post",
+                    data: {"name": "xiaoyao"},
+                    dataType: "JSON",
+                    success: function (data, status) {
+                        console.log(data);
+                        console.log(status);
+                        console.log("成功");
+                    },
+                    error: function (data, status) {
+                        console.log(data);
+                        console.log(status);
+                        console.log("失败");
+                    },
+                    async: True
+                });
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+<!--表单-->
+<form action="http://127.0.0.1:8080/regedit.html" method="post">
+    <!--用户名-->
+    <p>
+        <label>用户名:</label>
+        <input type="text" name="username" id="user">
+    </p>
+    <!--密码-->
+    <p>
+        <label>密 码:</label>
+        <input type="password" name="pwd">
+    </p>
+
+    <input type="submit" value="注册">
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.4.js"></script>
+
+    <script>
+        $(function () {
+            //设置点击事件
+            $('li').click(function () {
+               /*得到我们的标签内容*/
+                console.log($(this).html());
+            });
+
+
+
+            //后期有可能新添加内容
+            //子控件条目不确定的时候,那么我们可以使用代理
+            $('ul').append("<li>内容5</li>")
+
+        });
+    </script>
+</head>
+<body>
+
+<!--ul>li*3-->
+<ul>
+    <li>内容1</li>
+    <li>内容2</li>
+    <li>内容3</li>
+    <li>内容4</li>
+</ul>
+
+</body>
+</html>

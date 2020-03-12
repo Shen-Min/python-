@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+    <script>
+        window.onload = function () {
+            new Vue({
+                el:"#ul1",
+                data:{
+                    dict:{
+                        name:"zs",
+                        age:10
+                    }
+
+                }
+            })
+        }
+    </script>
+</head>
+<body>
+<ul id="ul1">
+<!--    遍历出字典中的条目,即字典中的值-->
+    <li v-for="item in dict">{{item}}</li>
+    <li v-for="(value,key) in dict">{{key}}:{{value}}</li>
+</ul>
+</body>
+</html>

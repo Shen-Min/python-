@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+        // 点击时弹出输入的内容
+            $('#btn').click(function () {
+                //方法1:根据id获取文本框的内容
+               /* var get_value = $('#pwd').prop('value');
+                alert(get_value);*/
+
+                // 方法2:val方法获取value值
+                var get_value = $('#pwd').val();
+                alert(get_value);
+
+            })
+
+        });
+    </script>
+
+</head>
+<body>
+<!--一个输入框 ,一个按钮-->
+<!--一个文本框默认是一个value这个文本框输入的信息-->
+<input type="password" id="pwd">
+
+<input type="button" value="获取值" id="btn">
+</body>
+</html>
